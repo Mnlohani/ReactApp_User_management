@@ -1,5 +1,4 @@
 import CardMedia from "@mui/material/CardMedia";
-import { UserId } from "@/shared/interface/interface";
 import { useNavigate } from "react-router-dom";
 
 export interface Props {
@@ -14,7 +13,7 @@ export const CardImage = ({ id }: Props): JSX.Element => {
       height={"180"}
       image={"src/image/image.jpeg"}
       alt={"green iguana"}
-      onClick={() => navigate(`/user/profile/${id}`)}
+      onClick={() => navigate("/user/profile/" + id)}
     />
   );
 };
